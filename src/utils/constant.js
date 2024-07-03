@@ -5,3 +5,12 @@ export const gradientStyle = {
   background: `linear-gradient(356.01deg, rgba(7, 47, 87, 0.75) 50.8%, rgba(7, 47, 87, 0) 94.58%), 
       linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45))`,
 };
+
+export const location = [
+  "Abu Dhabi",
+  "Dubai",
+  "Sharjah & Ajman",
+  "Fujairah",
+  "Ras Al Khaimah",
+  "Umm Al Quwain",
+];

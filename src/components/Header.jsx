@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HabotLogo from "../habot-logo.jpg";
+import ChevronDown from "../utils/ChevronDown";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -21,51 +22,39 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex items-center space-x-4">
-        <Link to="/find-supplier" className="text-lg text-gray-500">
+        <Link
+          to="/find-supplier"
+          className="text-lg text-gray-500 font-poppins"
+        >
           Find Supplier
         </Link>
         <div className="relative">
           <button
             onClick={toggleDropdown}
-            className="text-lg text-gray-500 flex items-center"
+            className="text-lg text-gray-500 flex items-center font-poppins"
           >
             Find Service Tags
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className={`ml-2 h-4 w-4 transition-transform ${
-                dropdownOpen ? "rotate-180" : "rotate-0"
-              }`}
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
-            </svg>
+            <ChevronDown dropdownOpen={dropdownOpen} />
           </button>
           {dropdownOpen && (
             <div className="absolute mt-2 w-48 bg-white border rounded shadow-lg z-40">
               <Link
                 to="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200 font-poppins"
                 onClick={() => setDropdownOpen(false)}
               >
                 Service 1
               </Link>
               <Link
                 to="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200 font-poppins"
                 onClick={() => setDropdownOpen(false)}
               >
                 Service 2
               </Link>
               <Link
                 to="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-200 font-poppins"
                 onClick={() => setDropdownOpen(false)}
               >
                 Service 3
@@ -73,7 +62,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <button className="block bg-white text-green-700 py-2 px-8 rounded-md shadow-lg transform transition-transform duration-200 ease-in-out active:scale-95 w-auto font-medium m-2 border-[2px] border-green-700">
+        <button className="block bg-white text-green-700 py-2 px-8 rounded-md shadow-lg transform transition-transform duration-200 ease-in-out active:scale-95 w-auto font-medium m-2 border-[2px] border-green-700 font-poppins">
           Login / Sign Up
         </button>
       </div>

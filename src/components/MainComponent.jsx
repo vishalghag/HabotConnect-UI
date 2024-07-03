@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
 import Banner from "./Banner";
+import Content from "./Content";
 
 const MainComponent = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const MainComponent = () => {
     <div>
       <Header />
       <Banner />
+      <Content />
     </div>
   );
 };
