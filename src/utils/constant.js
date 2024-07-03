@@ -14,3 +14,15 @@ export const location = [
   "Ras Al Khaimah",
   "Umm Al Quwain",
 ];
+
+export const Buyer = [
+  "Post your requirements.",
+  "Sit back for multiple suppliers to contact you.",
+  "Choose among the suppliers based on the ratings and reviews.",
+];
+
+export const Supplier = [
+  "Browse posted requirements from buyers.",
+  "Contact buyers directly with your offers.",
+  "Gain trust through positive ratings and reviews.",
+];

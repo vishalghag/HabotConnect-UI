@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import HabotLogo from "../habot-logo.jpg";
+import HabotLogo from "../images/habot-logo.jpg";
 import ChevronDown from "../utils/ChevronDown";
 
 const Header = () => {

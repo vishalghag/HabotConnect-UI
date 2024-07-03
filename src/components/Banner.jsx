@@ -3,6 +3,7 @@ import { BANNER_IMG, gradientStyle } from "../utils/constant.js";
 import CommonBtn from "../common/CommonBtn.jsx";
 import MessageSvg from "../utils/MessageSvg.jsx";
 import LocationSvg from "../utils/LocationSvg.jsx";
+import CommonInput from "../common/CommonInput.jsx";
 
 const Banner = () => {
   return (
@@ -23,18 +24,16 @@ const Banner = () => {
         <div className="flex flex-col sm:flex-row mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
           <div className="relative w-[400px]">
             <MessageSvg />
-            <input
-              type="text"
-              placeholder="Search your required service here"
-              className="rounded-md w-full h-[56px] border border-black pl-10 pr-5 font-poppins"
+            <CommonInput
+              inputType={"text"}
+              inputPlaceholder={"Search your required service here"}
             />
           </div>
           <div className="relative w-[400px]">
             <LocationSvg />
-            <input
-              type="text"
-              placeholder="Search your required service here"
-              className="rounded-md w-full h-[56px] border border-black pl-10 pr-5 font-medium font-poppins"
+            <CommonInput
+              inputType={"text"}
+              inputPlaceholder={"Search your desired location here"}
             />
           </div>
           <CommonBtn btnName={"Search"} />

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Banner from "./Banner";
 import Content from "./Content";
+import Footer from "./Footer";
 
 const MainComponent = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const MainComponent = () => {
       <Header />
       <Banner />
       <Content />
+      <Footer />
     </div>
   );
 };
