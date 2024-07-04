@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import postRequirementImg from "../images/post_requirement.png";
 import { FaCheck, FaYoutube } from "react-icons/fa";
-import { Buyer, Supplier } from "../utils/constant"; // Assuming Buyer and Supplier arrays are defined
+import { Buyer, Supplier } from "../utils/constant";
 
 const Requirement = () => {
   const [isBuyer, setIsBuyer] = useState(true);
@@ -14,7 +14,6 @@ const Requirement = () => {
     setIsBuyer(false);
   };
 
-  // Determine which array to use based on isBuyer state
   const itemsToShow = isBuyer ? Buyer : Supplier;
 
   return (

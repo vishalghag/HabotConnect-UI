@@ -1,6 +1,7 @@
 # HABOT Connect UI
 
 Welcome to the HABOT Connect UI repository. This project is a React-based frontend for the HABOT platform, which helps suppliers and buyers connect and explore matching opportunities it is mobile compatible also.
+I have used all best insdustrial practise
 
 ## Live Demo
 
