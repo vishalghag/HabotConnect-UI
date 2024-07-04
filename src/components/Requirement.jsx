@@ -58,7 +58,7 @@ const Requirement = () => {
               {itemsToShow.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center lg:justify-start"
+                  className="flex flex-col sm:flex-row items-center justify-center lg:justify-start"
                 >
                   <span className="inline-block w-4 h-4 bg-green-500 rounded-full mr-2 flex-shrink-0">
                     <FaCheck
@@ -66,7 +66,7 @@ const Requirement = () => {
                       className="text-white mt-[2px] ml-[2px]"
                     />
                   </span>
-                  <span>{item}</span>
+                  <span className="text-center sm:text-left">{item}</span>
                 </li>
               ))}
             </ul>
