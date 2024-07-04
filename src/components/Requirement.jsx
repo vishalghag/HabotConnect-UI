@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import postRequirementImg from "../images/post_requirement.png";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaYoutube } from "react-icons/fa";
 import { Buyer, Supplier } from "../utils/constant"; // Assuming Buyer and Supplier arrays are defined
 
 const Requirement = () => {
@@ -20,13 +20,16 @@ const Requirement = () => {
   return (
     <>
       <div className="w-full bg-white flex justify-center py-8">
-        <div className="w-11/12 bg-[#072F57] flex flex-col lg:flex-row justify-center items-center p-8 overflow-hidden">
-          <div className="relative mb-8 lg:mb-0">
+        <div className="w-11/12 bg-[#072F57] flex flex-col lg:flex-row justify-center items-center p-8 overflow-hidden relative">
+          <div className="relative mb-8 lg:mb-0 w-full lg:w-auto">
             <img
               src={postRequirementImg}
               alt="post"
               className="w-full lg:w-[640px] h-[350px] object-cover"
             />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <FaYoutube size={64} className="text-red-600" />
+            </div>
           </div>
           <div className="flex flex-col lg:ml-[200px] text-center lg:text-left">
             <div className="flex justify-center lg:justify-start mb-4">
@@ -58,7 +61,10 @@ const Requirement = () => {
                   className="flex items-center justify-center lg:justify-start"
                 >
                   <span className="inline-block w-4 h-4 bg-green-500 rounded-full mr-2 flex-shrink-0">
-                    <FaCheck size={15} className="text-white" />
+                    <FaCheck
+                      size={11}
+                      className="text-white mt-[2px] ml-[2px]"
+                    />
                   </span>
                   <span>{item}</span>
                 </li>
