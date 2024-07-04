@@ -11,12 +11,12 @@ const Footer = () => {
   return (
     <div className="bg-[#072F57] text-white py-11 mt-[100px]">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="border-t-[1px] border-b-[1px] border-white py-4 flex justify-between items-center">
-          <div className="flex flex-col items-start">
+        <div className="border-t-[1px] border-b-[1px] border-white py-4 flex flex-col lg:flex-row justify-between items-center">
+          <div className="flex flex-col items-start mb-8 lg:mb-0">
             <div className="text-3xl font-bold">HABOT</div>
             <p className="mt-1 font-[300]">© R Singhania</p>
           </div>
-          <div className="flex space-x-16">
+          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-16 mb-8 lg:mb-0">
             <div className="space-y-2">
               <h5 className="font-semibold">Company</h5>
               <ul>
